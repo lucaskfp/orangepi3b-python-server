@@ -1,4 +1,6 @@
 fastapi[standard]==0.121.0
 uvicorn[standard]==0.38.0
-pydantic[standard]==2.12.3
+pydantic[standard]==2.12.4
+pydantic-settings==2.11.0
 ytmusicapi==1.11.1
+python-dotenv==1.2.1
