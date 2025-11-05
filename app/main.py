@@ -1,6 +1,15 @@
 from typing import Union
-
 from fastapi import FastAPI
+from ytmusicapi import YTMusic, OAuthCredentials
+from app.config import settings
+
+ytmusic = YTMusic(
+    'oauth.json',
+    oauth_credentials=OAuthCredentials(
+        client_id=settings.ytmusic_client_id,
+        client_secret=settings.ytmusic_client_secret
+    )
+)
 
 app = FastAPI()
 
